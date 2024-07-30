@@ -5,68 +5,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recycle Coin (RCYL) - Home</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-        .container { width: 80%; margin: auto; overflow: hidden; }
-        header { background: #333; color: #fff; padding-top: 30px; min-height: 70px; border-bottom: #77d4d3 3px solid; }
-        header a { color: #fff; text-decoration: none; text-transform: uppercase; font-size: 16px; }
-        header ul { padding: 0; list-style: none; }
-        header li { float: left; display: inline; padding: 0 20px 0 20px; }
-        header #branding { float: left; }
-        header #branding h1 { margin: 0; }
-        header nav { float: right; margin-top: 10px; }
-        .showcase { background: #35424a; color: #fff; min-height: 400px; text-align: center; padding: 100px 20px; }
-        .showcase h1 { font-size: 55px; margin-top: 0; }
-        .showcase p { font-size: 20px; }
-        .content { padding: 20px; }
-        .content h2 { color: #35424a; }
-        footer { background: #333; color: #fff; text-align: center; padding: 30px 0; }
-        footer p { margin: 0; }
-        .btn { background: #35424a; color: #fff; padding: 10px 20px; text-decoration: none; }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #2b2b2b;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77d4d3 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .showcase {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('recycle-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 400px;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .showcase h1 {
+            font-size: 55px;
+            margin-top: 0;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #35424a;
+        }
+        .btn {
+            display: inline-block;
+            background: #35424a;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .flex-item {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+        }
+        footer {
+            background: #2b2b2b;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        img.logo {
+            width: 150px;
+            display: block;
+            margin: 20px auto;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .animated {
+            animation-duration: 2s;
+            animation-fill-mode: both;
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+        .fadeInUp {
+            animation-name: fadeInUp;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-links a {
+            padding: 10px 20px;
+            background: #77d4d3;
+            color: #333;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            background: #35424a;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div id="branding">
+                <img src="logo.png" alt="Recycle Coin Logo" class="logo">
                 <h1>Recycle Coin (RCYL)</h1>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#about">About</a></li>
+                    <li><a href="#whitepaper">White Paper</a></li>
                     <li><a href="#roadmap">Roadmap</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="/mnt/data/Recycle_Coin_White_Paper.pdf" target="_blank">White Paper</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="showcase">
         <div class="container">
-            <h1>Join the Green Revolution</h1>
-            <p>Recycle Coin (RCYL) - A unique cryptocurrency designed to incentivize and reward recycling activities.</p>
+            <h1 class="animated fadeInUp">Join the Green Revolution</h1>
+            <p class="animated fadeInUp">Recycle Coin (RCYL) - A unique cryptocurrency designed to incentivize and reward recycling activities.</p>
         </div>
     </section>
     <section class="content">
         <div class="container">
-            <h2 id="about">About</h2>
-            <p>Recycle Coin (RCYL) is a groundbreaking innovation designed to transform the recycling industry by leveraging blockchain technology. RCYL aims to promote environmental sustainability and responsible waste management through a gamified, community-driven platform that rewards users for their recycling efforts with a limited supply of 10 million coins.</p>
-            <h2 id="roadmap">Roadmap</h2>
-            <ul>
-                <li><strong>Phase 1:</strong> Development and Launch</li>
-                <li><strong>Phase 2:</strong> Community Building and Marketing</li>
-                <li><strong>Phase 3:</strong> Platform Expansion</li>
-                <li><strong>Phase 4:</strong> Global Adoption</li>
-            </ul>
-            <h2 id="team">Team</h2>
-            <p>Yousef Fakhouri - Founder and CEO. Experienced entrepreneur with a background in environmental sustainability and blockchain technology.</p>
-            <h2 id="contact">Contact</h2>
-            <p>Join our community on <a href="https://discord.gg/recyclecoin">Discord</a> and follow us on <a href="https://twitter.com/recyclecoin">Twitter</a>.</p>
-            <a href="/mnt/data/Recycle_Coin_White_Paper.pdf" class="btn" target="_blank">Read Our White Paper</a>
-        </div>
-    </section>
-    <footer>
-        <p>Recycle Coin &copy; 2024</p>
-    </footer>
-</body>
-</html>
+            <h2 id="about" class="text-center">About</h2>
+            <p class="card">Recycle Coin (RCYL) is a groundbreaking innovation designed to transform the recycling industry by leveraging blockchain technology. RCYL aims to promote environmental sustainability and responsible waste management through a gamified, community-driven platform that rewards users for their recycling efforts with a limited supply of 10 million coins.</p>
+            <div class="card">
+                <h2 id="whitepaper" class="text-center">White Paper</h2>
+                <h3>Abstract</h3>
+                <p>Recycle Coin (RCYL) aims to revolutionize recycling by leveraging blockchain technology to incentivize sustainable behaviors. By rewarding users for verified recycling activities, Recycle Coin promotes environmental responsibility while providing a transparent and secure system for tracking and verifying recycling efforts.</p>
+                <h3>Introduction</h3>
+                <p>In today's world, recycling is more important than ever. With increasing amounts of waste and growing environmental concerns, it is crucial to find innovative ways to encourage recycling. Recycle Coin is a blockchain-based solution designed to incentivize recycling efforts and make a positive impact on the environment.</p>
+                <h3>Problem Statement</h3>
+                <p>Despite widespread awareness of the benefits of recycling, participation rates remain low due to a lack of incentives and transparency. Traditional recycling programs often fail to engage communities effectively, and the process of verifying and rewarding recycling activities is cumbersome and inefficient.</p>
+                <h3>Solution Overview</h3>
+                <p>Recycle Coin leverages blockchain technology to create a transparent and efficient system for rewarding recycling activities. By using smart contracts, Recycle Coin ensures that recycling efforts are accurately tracked and verified, providing users with immediate rewards in the form of RCYL tokens.</p>
+                <h3>Technology and Implementation</h3>
+                <p>Recycle Coin is built on the Solana blockchain, chosen for its high throughput and low transaction costs. Smart contracts handle the distribution of RCYL tokens based on verified recycling activities.</p>
+                <h3>Tokenomics</h3>
+                <p>
+                    - Total Supply: 10 million RCYL<br>
+                    - Distribution:<br>
+                      - 40% for rewards and incentives<br>
+                      - 20% for development and operations<br>
+                      - 20% for marketing and partnerships<br>
+                      - 10% for team and advisors<br>
+                      - 10% for reserve<br>
+                    - Utility: RCYL tokens can be used for various purposes, including purchasing eco-friendly products, donating to environmental causes, and trading on decentralized exchanges.<br>
+                    - Liquidity Reward: 555 RCYL per week for liquidity providers.
+                </p>
+                <h3>Use Cases</h3>
+                <p>
+                    - Individual Recycling: Users earn RCYL tokens for recycling household waste.<br>
+                    - Business Partnerships: Businesses can participate by offering RCYL tokens as rewards for customers who recycle packaging materials.<br>
+                    - Community Programs: Municipalities can integrate Recycle Coin into their recycling programs to boost participation and transparency.
+                </p>
+                <h3>Roadmap</h3>
+                <p>
+                    - Q3 2024: Launch of Recycle Coin white paper and initial token distribution<br>
+                    - Q4 2024: Pilot program launch<br>
+                    - Q1 2025: Expansion of partnerships with local governments and businesses<br>
+                    - Q2 2025: Launch of NFT-based recycling certificates and marketplace<br>
+                    - Q3 2025: Full-scale implementation and global expansion
+                </p>
+                <h3>Team</h3>
+                <p>Yousef Fakhouri: Founder and CEO, with a background in environmental science and blockchain technology.</p>
+                <h3>Conclusion</h3>
+                <p
