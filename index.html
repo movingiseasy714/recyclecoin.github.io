@@ -3,108 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recycle Coin (RCYL) - Home</title>
+    <title>Recycle Coin (RCYL) White Paper</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
         body {
             font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
-            background: #f0f0f0;
-            color: #333;
+            background: #000;
+            color: #fff;
         }
         .container {
             width: 80%;
             margin: auto;
+            padding-top: 20px;
             overflow: hidden;
         }
-        header {
-            background: #4CAF50;
-            color: #fff;
-            padding-top: 20px;
-            min-height: 70px;
-            border-bottom: #3e8e41 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        .showcase {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('recycle-bg.jpg') no-repeat center center/cover;
-            color: #fff;
-            height: 400px;
-            text-align: center;
-            padding-top: 100px;
-        }
-        .showcase h1 {
-            font-size: 55px;
-            margin-top: 0;
-        }
-        .showcase p {
-            font-size: 20px;
-        }
-        .content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .content h2 {
+        h1, h2, h3 {
             color: #4CAF50;
         }
-        .btn {
-            display: inline-block;
-            background: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
         }
         .card {
-            background: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #4CAF50;
             margin: 20px 0;
             padding: 20px;
             border-radius: 5px;
         }
-        .card h3 {
-            margin-top: 0;
-            color: #4CAF50;
-        }
-        .flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .flex-item {
-            flex: 1;
-            margin: 10px;
-            min-width: 250px;
+        img.logo {
+            width: 150px;
+            display: block;
+            margin: 20px auto;
         }
         footer {
             background: #4CAF50;
@@ -116,112 +50,82 @@
         footer p {
             margin: 0;
         }
-        img.logo {
-            width: 150px;
-            display: block;
-            margin: 20px auto;
-        }
-        .text-center {
-            text-align: center;
-        }
-        .animated {
-            animation-duration: 2s;
-            animation-fill-mode: both;
-        }
-        @keyframes fadeInUp {
-            from {
-                transform: translate3d(0, 40px, 0);
-                opacity: 0;
-            }
-
-            to {
-                transform: translate3d(0, 0, 0);
-                opacity: 1;
-            }
-        }
-        .fadeInUp {
-            animation-name: fadeInUp;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-        }
-        .nav-links a {
-            padding: 10px 20px;
-            background: #3e8e41;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .nav-links a:hover {
-            background: #2e7031;
-            color: #fff;
-        }
-        h3, p {
-            line-height: 1.8;
-        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <img src="Bold_3D_Recycle_Coin_Logo.png" alt="Recycle Coin Logo" class="logo">
-                <h1>Recycle Coin (RCYL)</h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#whitepaper">White Paper</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <img src="Bold_3D_Recycle_Coin_Logo.png" alt="Recycle Coin Logo" class="logo">
+        <h1 class="text-center">Recycle Coin (RCYL) White Paper</h1>
+        
+        <div class="card">
+            <h2>Abstract</h2>
+            <p>Recycle Coin (RCYL) aims to revolutionize recycling by leveraging blockchain technology to incentivize sustainable behaviors. By rewarding users for verified recycling activities, Recycle Coin promotes environmental responsibility while providing a transparent and secure system for tracking and verifying recycling efforts.</p>
         </div>
-    </header>
-    <section class="showcase">
-        <div class="container">
-            <h1 class="animated fadeInUp">Join the Green Revolution</h1>
-            <p class="animated fadeInUp">Recycle Coin (RCYL) - A unique cryptocurrency designed to incentivize and reward recycling activities.</p>
+
+        <div class="card">
+            <h2>Introduction</h2>
+            <p>In today's world, recycling is more important than ever. With increasing amounts of waste and growing environmental concerns, it is crucial to find innovative ways to encourage recycling. Recycle Coin is a blockchain-based solution designed to incentivize recycling efforts and make a positive impact on the environment.</p>
         </div>
-    </section>
-    <section class="content">
-        <div class="container">
-            <h2 id="about" class="text-center">About</h2>
-            <p class="card">Recycle Coin (RCYL) is a groundbreaking innovation designed to transform the recycling industry by leveraging blockchain technology. RCYL aims to promote environmental sustainability and responsible waste management through a gamified, community-driven platform that rewards users for their recycling efforts with a limited supply of 10 million coins.</p>
-            <div class="card">
-                <h2 id="whitepaper" class="text-center">White Paper</h2>
-                <h3>Abstract</h3>
-                <p>Recycle Coin (RCYL) aims to revolutionize recycling by leveraging blockchain technology to incentivize sustainable behaviors. By rewarding users for verified recycling activities, Recycle Coin promotes environmental responsibility while providing a transparent and secure system for tracking and verifying recycling efforts.</p>
-                <h3>Introduction</h3>
-                <p>In today's world, recycling is more important than ever. With increasing amounts of waste and growing environmental concerns, it is crucial to find innovative ways to encourage recycling. Recycle Coin is a blockchain-based solution designed to incentivize recycling efforts and make a positive impact on the environment.</p>
-                <h3>Problem Statement</h3>
-                <p>Despite widespread awareness of the benefits of recycling, participation rates remain low due to a lack of incentives and transparency. Traditional recycling programs often fail to engage communities effectively, and the process of verifying and rewarding recycling activities is cumbersome and inefficient.</p>
-                <h3>Solution Overview</h3>
-                <p>Recycle Coin leverages blockchain technology to create a transparent and efficient system for rewarding recycling activities. By using smart contracts, Recycle Coin ensures that recycling efforts are accurately tracked and verified, providing users with immediate rewards in the form of RCYL tokens.</p>
-                <h3>Technology and Implementation</h3>
-                <p>Recycle Coin is built on the Solana blockchain, chosen for its high throughput and low transaction costs. Smart contracts handle the distribution of RCYL tokens based on verified recycling activities.</p>
-                <h3>Tokenomics</h3>
-                <p>
-                    - Total Supply: 10 million RCYL<br>
-                    - Distribution:<br>
-                      - 40% for rewards and incentives<br>
-                      - 20% for development and operations<br>
-                      - 20% for marketing and partnerships<br>
-                      - 10% for team and advisors<br>
-                      - 10% for reserve<br>
-                    - Utility: RCYL tokens can be used for various purposes, including purchasing eco-friendly products, donating to environmental causes, and trading on decentralized exchanges.<br>
-                    - Liquidity Reward: 555 RCYL per week for liquidity providers.
-                </p>
-                <h3>Use Cases</h3>
-                <p>
-                    - Individual Recycling: Users earn RCYL tokens for recycling household waste.<br>
-                    - Business Partnerships: Businesses can participate by offering RCYL tokens as rewards for customers who recycle packaging materials.<br>
-                    - Community Programs: Municipalities can integrate Recycle Coin into their recycling programs to boost participation and transparency.
-                </p>
-                <h3>Roadmap</h3>
-                <p>
-                    - Q3 2024: Launch of Recycle Coin white paper and initial token distribution<br>
-                    - Q4 2024: Pilot program launch<br>
-                    - Q1 2025: Expansion of partnerships with local governments and businesses<br>
+
+        <div class="card">
+            <h2>Problem Statement</h2>
+            <p>Despite widespread awareness of the benefits of recycling, participation rates remain low due to a lack of incentives and transparency. Traditional recycling programs often fail to engage communities effectively, and the process of verifying and rewarding recycling activities is cumbersome and inefficient.</p>
+        </div>
+
+        <div class="card">
+            <h2>Solution Overview</h2>
+            <p>Recycle Coin leverages blockchain technology to create a transparent and efficient system for rewarding recycling activities. By using smart contracts, Recycle Coin ensures that recycling efforts are accurately tracked and verified, providing users with immediate rewards in the form of RCYL tokens.</p>
+        </div>
+
+        <div class="card">
+            <h2>Technology and Implementation</h2>
+            <p>Recycle Coin is built on the Solana blockchain, chosen for its high throughput and low transaction costs. Smart contracts handle the distribution of RCYL tokens based on verified recycling activities.</p>
+        </div>
+
+        <div class="card">
+            <h2>Tokenomics</h2>
+            <p>
+                - Total Supply: 10 million RCYL<br>
+                - Distribution:<br>
+                  - 40% for rewards and incentives<br>
+                  - 20% for development and operations<br>
+                  - 20% for marketing and partnerships<br>
+                  - 10% for team and advisors<br>
+                  - 10% for reserve<br>
+                - Utility: RCYL tokens can be used for various purposes, including purchasing eco-friendly products, donating to environmental causes, and trading on decentralized exchanges.<br>
+                - Liquidity Reward: 555 RCYL per week for liquidity providers.<br>
+                - Pool ID: 9tvWzM2CtBUnGSDME4xH55uUmiFuHkw6dHR3qY75Gx9n
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Use Cases</h2>
+            <p>
+                - Individual Recycling: Users earn RCYL tokens for recycling household waste.<br>
+                - Business Partnerships: Businesses can participate by offering RCYL tokens as rewards for customers who recycle packaging materials.<br>
+                - Community Programs: Municipalities can integrate Recycle Coin into their recycling programs to boost participation and transparency.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Roadmap</h2>
+            <p>
+                - Q3 2024: Launch of Recycle Coin white paper and initial token distribution<br>
+                - Q4 2024: Pilot program launch<br>
+                - Q1 2025: Expansion of partnerships with local governments and businesses<br>
+                - Q2 2025: Launch of NFT-based recycling certificates and marketplace<br>
+                - Q3 2025: Full-scale implementation and global expansion
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Team</h2>
+            <p>Yousef Fakhouri: Founder and CEO, with a background in environmental science and blockchain technology.</p>
+        </div>
+
+        <footer>
+            <p>Recycle Coin &copy; 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
