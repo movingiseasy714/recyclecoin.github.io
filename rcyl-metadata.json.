@@ -1,0 +1,10 @@
+{
+  "name": "Recycle Coin",
+  "symbol": "RCYL",
+  "description": "A token rewarding recycling activities by converting actions into NFTs and earning RCYL tokens.",
+  "image": "https://movingiseasy714.github.io/recyclecoin.github.io/Bold_3D_Recycle_Coin_Logo.png",  // This is the URL of your uploaded image
+  "sellerFeeBasisPoints": 0,
+  "creators": null,
+  "collection": null,
+  "uses": null
+}
